@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Wrench, Tool, Settings, ScanSearch } from "lucide-react";
+import { Wrench, Hammer, Settings, ScanSearch } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -99,7 +99,7 @@ const Services = () => {
             </div>
             <div className="order-1 md:order-2">
               <div className="flex items-center mb-4">
-                <Tool className="text-elevator-blue mr-3" size={36} />
+                <Hammer className="text-elevator-blue mr-3" size={36} />
                 <h2 className="text-3xl font-bold">Maintenance</h2>
               </div>
               <p className="mb-6 text-lg">

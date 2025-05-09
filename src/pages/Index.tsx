@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
-import { Wrench, Tool, Settings, ScanSearch } from "lucide-react";
+import { Wrench, Hammer, Settings, ScanSearch } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -16,7 +16,7 @@ const Index = () => {
     {
       title: "Maintenance",
       description: "Regular servicing to ensure the safety and longevity of your elevator systems.",
-      icon: Tool,
+      icon: Hammer,
       learnMoreLink: "/services#maintenance",
     },
     {
