@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
-import { Installation, Maintenance, Modernization, Repairs } from "lucide-react";
+import { Wrench, Tool, Settings, ScanSearch } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -10,25 +10,25 @@ const Index = () => {
     {
       title: "Installation",
       description: "Custom elevator installations for residential, commercial, and industrial buildings.",
-      icon: Installation,
+      icon: Wrench,
       learnMoreLink: "/services#installation",
     },
     {
       title: "Maintenance",
       description: "Regular servicing to ensure the safety and longevity of your elevator systems.",
-      icon: Maintenance,
+      icon: Tool,
       learnMoreLink: "/services#maintenance",
     },
     {
       title: "Modernization",
       description: "Upgrade your existing elevators for improved performance, safety, and aesthetics.",
-      icon: Modernization,
+      icon: Settings,
       learnMoreLink: "/services#modernization",
     },
     {
       title: "Repairs",
       description: "Fast and efficient repair services with minimal downtime for all elevator brands.",
-      icon: Repairs,
+      icon: ScanSearch,
       learnMoreLink: "/services#repairs",
     },
   ];

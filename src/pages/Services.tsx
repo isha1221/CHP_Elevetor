@@ -1,7 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Installation, Maintenance, Modernization, Repairs } from "lucide-react";
+import { Wrench, Tool, Settings, ScanSearch } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -36,7 +35,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-4">
-                <Installation className="text-elevator-blue mr-3" size={36} />
+                <Wrench className="text-elevator-blue mr-3" size={36} />
                 <h2 className="text-3xl font-bold">Installation</h2>
               </div>
               <p className="mb-6 text-lg">
@@ -100,7 +99,7 @@ const Services = () => {
             </div>
             <div className="order-1 md:order-2">
               <div className="flex items-center mb-4">
-                <Maintenance className="text-elevator-blue mr-3" size={36} />
+                <Tool className="text-elevator-blue mr-3" size={36} />
                 <h2 className="text-3xl font-bold">Maintenance</h2>
               </div>
               <p className="mb-6 text-lg">
@@ -147,7 +146,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex items-center mb-4">
-                <Modernization className="text-elevator-blue mr-3" size={36} />
+                <Settings className="text-elevator-blue mr-3" size={36} />
                 <h2 className="text-3xl font-bold">Modernization</h2>
               </div>
               <p className="mb-6 text-lg">
@@ -212,7 +211,7 @@ const Services = () => {
             </div>
             <div className="order-1 md:order-2">
               <div className="flex items-center mb-4">
-                <Repairs className="text-elevator-blue mr-3" size={36} />
+                <ScanSearch className="text-elevator-blue mr-3" size={36} />
                 <h2 className="text-3xl font-bold">Repairs</h2>
               </div>
               <p className="mb-6 text-lg">
