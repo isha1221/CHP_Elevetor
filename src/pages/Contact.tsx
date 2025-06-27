@@ -10,14 +10,7 @@ const Contact = () => {
       phone: "+91 9922904709",
       email: "cphelevators7@gmail.com",
       mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30261.400635984548!2d73.91255228413503!3d18.543579571317583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c229151423ad%3A0x5f948980691cf925!2sFlorida%20County!5e0!3m2!1sen!2sin!4v1750763463632!5m2!1sen!2sin"
-    },
-    {
-      city: "Chhatrapati Sambhajinagar",
-      address: "C-60, MIDC, Walluj, Chhatrapati Sambhajinagar - 431001.",
-      phone: "+91 7776035365",
-      email: "cphconsultancy@gmail.com",
-      mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.8245568944835!2d75.20849397727211!3d19.847374979685494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9bb2085eaa61%3A0x98d7e29aaf24f38b!2sMIDC%20Waluj%2C%20Chhatrapati%20Sambhajinagar!5e0!3m2!1sen!2sin!4v1750763176494!5m2!1sen!2sin"
-    },
+    }
   ];
 
   const serviceAreas = ["Pune", "Chhatrapati Sambhajinagar", "Solapur", "Nasik", "Mumbai", "Kolhapur", "Nanded", "Latur", "Ahmednagar","Panaji","Margao","Mapusa","Bangalore","Mysore"," Mangalore","Hubli-Dharwad","Belgaum"];
@@ -45,8 +38,8 @@ const Contact = () => {
                 or have questions about your existing elevator system, we're here to help.
               </p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center justify-center ">
+                <div className="bg-gray-50 p-6 rounded-lg"> 
                   <h3 className="text-xl font-semibold mb-4">Pune Office</h3>
                   <address className="not-italic space-y-2 text-muted-foreground">
                     <p>Sr.No.39, “Florida County”, Bldg. No. B6 / Flat No. 303, Near Shree Hospital, Keshav Nagar, Mundhwa, Pune - 411036.</p>
@@ -55,14 +48,7 @@ const Contact = () => {
                   </address>
                 </div>
                 
-                <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4">Chhatrapati Sambhajinagar Office</h3>
-                  <address className="not-italic space-y-2 text-muted-foreground">
-                    <p>C-60, MIDC, Walluj, Chhatrapati Sambhajinagar - 431001.</p>
-                    <p>Phone: +91 9975066316</p>
-                    <p>Email: cphconsultancy@gmail.com</p>
-                  </address>
-                </div>
+                
               </div>
             
               <div>
@@ -95,7 +81,7 @@ const Contact = () => {
               </p>
             </div>
             <Button size="lg" className="bg-elevator-orange hover:bg-elevator-orange/90 whitespace-nowrap">
-              <a href="tel:+919876543210">+91 9922904709</a>
+              <a href="tel:+919922904709">+91 9922904709</a>
             </Button>
           </div>
         </div>
@@ -106,7 +92,7 @@ const Contact = () => {
         <div className="container">
           <h2 className="text-3xl font-bold mb-8 text-center">Our Locations</h2>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="flex items-center justify-center">
             {offices.map((office, index) => (
               <div key={index} className="border border-gray-200 rounded-lg overflow-hidden shadow-md">
                 <div className="aspect-video w-full">

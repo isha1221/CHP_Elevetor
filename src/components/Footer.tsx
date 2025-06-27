@@ -82,8 +82,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-elevator-orange">Contact Info</h4>
             <address className="not-italic text-gray-300 space-y-2">
               <p>Pune Office: Sr.No.39, “Florida County”, Bldg. No. B6 / Flat No. 303, Near Shree Hospital, Keshav Nagar, Mundhwa, 411036.</p>
-              <p>Chhatrapati Sambhajinagar Office: C-60, MIDC, Walluj, 431001.</p>
-              <p>Phone: +91 9975066316</p>
+              
+              <p>Phone: +91 9922904709</p>
               <p>Email: cphelevators7@gmail.com</p>
             </address>
           </div>
