@@ -212,7 +212,7 @@ const filteredClients = selectedSector === "All"
             <div className="rounded-lg overflow-hidden shadow-md">
               <div className="aspect-video bg-gray-200">
                 <img 
-                  src="./images/hospital.webp" 
+                  src="/images/hospital.webp" 
                   alt="Hospital elevator project" 
                   className="w-full h-full object-cover"
                 />
@@ -227,7 +227,7 @@ const filteredClients = selectedSector === "All"
             <div className="rounded-lg overflow-hidden shadow-md">
               <div className="aspect-video bg-gray-200">
                 <img 
-                  src="./images/rachna_residency.webp" 
+                  src="/images/rachna_residency.webp" 
                   alt="Residential elevator project" 
                   className="w-full h-full object-cover"
                 />
@@ -242,7 +242,7 @@ const filteredClients = selectedSector === "All"
             <div className="rounded-lg overflow-hidden shadow-md">
               <div className="aspect-video bg-gray-200">
                 <img 
-                  src="./images/shaan_resort.jpg" 
+                  src="/images/shaan_resort.jpg" 
                   alt="Commercial elevator project" 
                   className="w-full h-full object-cover"
                 />

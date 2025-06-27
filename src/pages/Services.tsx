@@ -74,7 +74,7 @@ const Services = () => {
             <div>
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="./images/elevator_installation.png" 
+                  src="/images/elevator_installation.png" 
                   alt="Elevator installation" 
                   className="w-full h-full object-cover"
                 />
@@ -91,7 +91,7 @@ const Services = () => {
             <div className="order-2 md:order-1">
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="./images/elevator_service.png" 
+                  src="/images/elevator_service.png" 
                   alt="Elevator maintenance" 
                   className="w-full h-full object-cover"
                 />
@@ -186,7 +186,7 @@ const Services = () => {
             <div>
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="./images/modern_elevator_interior.png" 
+                  src="/images/modern_elevator_interior.png" 
                   alt="Modern elevator interior" 
                   className="w-full h-full object-cover"
                 />
@@ -203,7 +203,7 @@ const Services = () => {
             <div className="order-2 md:order-1">
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="./images/elev_service.png" 
+                  src="/images/elev_service.png" 
                   alt="Elevator repair" 
                   className="w-full h-full object-cover"
                 />

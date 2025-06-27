@@ -146,7 +146,7 @@ const Index = () => {
             <div className="order-1 md:order-2">
               <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="./images/modern_elevator2.png" 
+                  src="/images/modern_elevator2.png" 
                   alt="Modern elevator" 
                   className="w-full h-full object-cover"
                 />

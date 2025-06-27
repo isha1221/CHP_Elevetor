@@ -65,7 +65,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="./images/logo.png" 
+                  src="/images/logo.png" 
                   alt="CPH Elevators Team" 
                   className="w-full h-full object-cover"
                 />
@@ -130,7 +130,7 @@ const About = () => {
             <div>
               <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="./images/modern_elevator.png" 
+                  src="/images/modern_elevator.png" 
                   alt="Modern elevator interior" 
                   className="w-full h-full object-cover"
                 />
