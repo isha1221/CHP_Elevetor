@@ -43,11 +43,7 @@ const Footer = () => {
                   Our Clients
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/gallery" className="text-gray-300 hover:text-white transition-colors">
-                  Project Gallery
-                </NavLink>
-              </li>
+             
               <li>
                 <NavLink to="/contact" className="text-gray-300 hover:text-white transition-colors">
                   Contact Us
@@ -85,10 +81,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-elevator-orange">Contact Info</h4>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>Pune Office: 123 Main Street, Pune</p>
-              <p>Aurangabad Office: 456 Central Avenue, Aurangabad</p>
-              <p>Phone: +91 98765 43210</p>
-              <p>Email: info@cphelevators.com</p>
+              <p>Pune Office: Sr.No.39, “Florida County”, Bldg. No. B6 / Flat No. 303, Near Shree Hospital, Keshav Nagar, Mundhwa, 411036.</p>
+              <p>Chhatrapati Sambhajinagar Office: C-60, MIDC, Walluj, 431001.</p>
+              <p>Phone: +91 9975066316</p>
+              <p>Email: cphelevators7@gmail.com</p>
             </address>
           </div>
         </div>

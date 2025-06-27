@@ -3,63 +3,103 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import TestimonialCard from "@/components/TestimonialCard";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 
 const Clients = () => {
   const clients = [
-    { name: "Prestige Group", sector: "Real Estate" },
-    { name: "City General Hospital", sector: "Healthcare" },
-    { name: "Tech Park One", sector: "IT & Office Space" },
-    { name: "Grand Hotel", sector: "Hospitality" },
-    { name: "Harmony Residency", sector: "Residential" },
-    { name: "Westside Mall", sector: "Retail" },
-    { name: "Central University", sector: "Education" },
-    { name: "Silver Heights Apartments", sector: "Residential" },
-    { name: "Metro Business Center", sector: "Commercial" },
-    { name: "Sunshine Hospital", sector: "Healthcare" },
-    { name: "Pinnacle Towers", sector: "Real Estate" },
-    { name: "Golden Retreat Resort", sector: "Hospitality" }
-  ];
+  { name: "Shivtara Properties", sector: "Real Estate" },
+  { name: "Solapur Municipal Corporation", sector: "Government" },
+  { name: "Kailash Complex", sector: "Commercial" },
+  { name: "Usha Kiran Hospital", sector: "Healthcare" },
+  { name: "Sai Properties", sector: "Real Estate" },
+  { name: "Sidhivinayak Developers", sector: "Real Estate" },
+  { name: "Om Sai Developers", sector: "Real Estate" },
+  { name: "Guru Datta Developers", sector: "Real Estate" },
+  { name: "Sahara Developers", sector: "Real Estate" },
+  { name: "Shivshree Developers", sector: "Real Estate" },
+  { name: "Sathe Group", sector: "Real Estate" },
+  { name: "Nitture Group", sector: "Real Estate" },
+  { name: "Vivek Developers", sector: "Real Estate" },
+  { name: "S.M. Autade Pvt. Ltd.", sector: "Corporate" },
+  { name: "R.R. Construction", sector: "Construction" },
+  { name: "Panchtara Developers", sector: "Real Estate" },
+  { name: "Shah Kunj Developers", sector: "Real Estate" },
+  { name: "Saishree Developers", sector: "Real Estate" },
+  { name: "Gurukrupa Developers", sector: "Real Estate" },
+  { name: "Utkarsh Builders", sector: "Construction" },
+  { name: "Sai Siddhi Developers", sector: "Real Estate" },
+  { name: "Shiv Samarth Builders", sector: "Construction" },
+  { name: "Subha Associate", sector: "Real Estate" },
+  { name: "Vignahartha Developers", sector: "Real Estate" },
+  { name: "Jijamata Developers", sector: "Real Estate" },
+  { name: "Bhosale Developers", sector: "Real Estate" },
+  { name: "Sai Sankalp Developers", sector: "Real Estate" },
+  { name: "DMR Developers", sector: "Real Estate" },
+  { name: "Kalyani Developers", sector: "Real Estate" },
+  { name: "Heritage Developers", sector: "Real Estate" },
+  { name: "Mayur One Hotel", sector: "Restaurants" },
+  { name: "Pawar Sarii", sector: "Retail" },
+  {name:"Shatayu Hospital",sector:"Healthcare"},
+  {name:"Hotel Rachna Residency", Sector:"Restaurants"},
+  {name:"Hotel Aryan",sector:"Restaurants"},
+  {name:"Shaan Coco Palms Resort",sector:"Commercial"}
+];
+
 
   const testimonials = [
-    {
-      quote: "CPH Elevators provided exceptional service. They completed our elevator installation on time and within budget. Their team was professional and maintained high safety standards throughout the project.",
-      author: "Rajesh Kumar",
-      role: "Facility Manager",
-      company: "Prime Towers",
-    },
-    {
-      quote: "We've been using CPH for maintenance of our hospital elevators for over 5 years. Their 24/7 service has been invaluable to ensure our elevators are always operational for patients and staff.",
-      author: "Dr. Anjali Sharma",
-      role: "Director",
-      company: "City General Hospital",
-    },
-    {
-      quote: "The modernization of our old elevator system was handled professionally. The elevators now run smoother and look much better. Our residents are extremely happy with the results.",
-      author: "Vikram Mehta",
-      role: "Building Manager",
-      company: "Harmony Residency",
-    },
-    {
-      quote: "When our elevator broke down, CPH Elevators responded immediately and had it fixed within hours. Their emergency service is truly reliable and efficient.",
-      author: "Priya Patel",
-      role: "Operations Manager",
-      company: "Tech Park One",
-    },
-    {
-      quote: "The installation of our panoramic elevator has added a unique feature to our hotel. Guests love it, and the CPH team made the entire process smooth and hassle-free.",
-      author: "Sanjay Kapoor",
-      role: "General Manager",
-      company: "Grand Hotel",
-    },
-    {
-      quote: "CPH Elevators guided us through selecting the right elevator system for our mall. Their expertise and attention to detail made all the difference.",
-      author: "Anita Singh",
-      role: "Project Manager",
-      company: "Westside Mall",
-    },
-  ];
+  {
+    quote: "CPH Elevators handled our hotel project with exceptional professionalism. The elevator adds both functionality and elegance to our space.",
+    author: "Ekanath Bhandari",
+    company: "Hotel Rachna Residency",
+  },
+  {
+    quote: "The installation process was smooth and timely. We’re very satisfied with CPH’s service quality.",
+    author: "Nilesh Singh",
+    company: "Shivtara Builders",
+  },
+  {
+    quote: "Excellent support and maintenance by CPH Elevators. They are responsive and reliable at every stage.",
+    author: "Devendra Bhat",
+    company: "Matoshree Builders",
+  },
+  {
+    quote: "The CPH team delivered efficient solutions tailored for our multi-storey project. Highly recommended.",
+    author: "Jitin Kamble",
+    company: "Kalyani Builders",
+  },
+  {
+    quote: "Our experience with CPH Elevators during the hospital expansion has been nothing short of excellent. Safe, efficient, and quick.",
+    author: "Dr. Patil",
+    company: "Shatayu Hospital",
+  },
+  {
+    quote: "Very satisfied with the installation at our hotel. The new elevator has elevated our guest experience, literally!",
+    author: "Dinesh Suntale",
+    company: "Hotel Aryan",
+  },
+  {
+    quote: "We’re happy with the quality and after-sales service provided by CPH. Will definitely recommend them for future resort projects.",
+    author: "Shubham Mahajan",
+    company: "Shaan Coco Palms Resort",
+  },
+  {
+    quote: "From installation to follow-up service, CPH Elevators delivered a seamless experience. A great partner for commercial projects.",
+    author: "Rajesh Pawar",
+    company: "Pawar Saree",
+  },
+];
 
-  const clientSectors = ["All", "Real Estate", "Healthcare", "Hospitality", "Residential", "Commercial", "Retail", "Education", "IT & Office Space"];
+
+
+  const clientSectors = ["All", "Real Estate", "Healthcare","Restaurants", "Commercial", "Retail","Government"];
+
+  const [selectedSector, setSelectedSector] = useState("All");
+
+// Filter clients based on selected sector
+const filteredClients = selectedSector === "All" 
+  ? clients 
+  : clients.filter(client => client.sector === selectedSector);
 
   return (
     <>
@@ -82,7 +122,7 @@ const Clients = () => {
               We're proud to serve a diverse range of clients across multiple industries. Here are some of the organizations that trust us with their elevator needs.
             </p>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
+            {/* <div className="flex flex-wrap justify-center gap-4 mb-8">
               {clientSectors.map((sector, index) => (
                 <button 
                   key={index}
@@ -106,7 +146,34 @@ const Clients = () => {
                   </CardContent>
                 </Card>
               ))}
-            </div>
+            </div> */}
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+  {clientSectors.map((sector, index) => (
+    <button 
+      key={index}
+      onClick={() => setSelectedSector(sector)}
+      className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+        selectedSector === sector 
+          ? "bg-elevator-blue text-white" 
+          : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+      }`}
+    >
+      {sector}
+    </button>
+  ))}
+</div>
+
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  {filteredClients.map((client, index) => (
+    <Card key={index} className="hover:shadow-md transition-shadow">
+      <CardContent className="p-6">
+        <h3 className="font-semibold text-lg mb-1">{client.name}</h3>
+        <p className="text-sm text-muted-foreground">{client.sector}</p>
+      </CardContent>
+    </Card>
+  ))}
+</div>
+
           </div>
         </div>
       </section>
@@ -125,7 +192,7 @@ const Clients = () => {
                 key={index}
                 quote={testimonial.quote}
                 author={testimonial.author}
-                role={testimonial.role}
+                // role={testimonial.role}
                 company={testimonial.company}
               />
             ))}
@@ -145,14 +212,14 @@ const Clients = () => {
             <div className="rounded-lg overflow-hidden shadow-md">
               <div className="aspect-video bg-gray-200">
                 <img 
-                  src="https://images.unsplash.com/photo-1519642918688-7e43b19245d8?auto=format&fit=crop&q=80" 
+                  src="./images/hospital.webp" 
                   alt="Hospital elevator project" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-lg">City General Hospital</h3>
-                <p className="text-sm text-muted-foreground mb-2">Modernization of 6 elevators</p>
+                <h3 className="font-semibold text-lg">Shatayu Hospital</h3>
+                {/* <p className="text-sm text-muted-foreground mb-2">Modernization of 6 elevators</p> */}
                 <p>Upgraded the hospital's elevator system to improve patient transport efficiency and safety.</p>
               </div>
             </div>
@@ -160,14 +227,14 @@ const Clients = () => {
             <div className="rounded-lg overflow-hidden shadow-md">
               <div className="aspect-video bg-gray-200">
                 <img 
-                  src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80" 
+                  src="./images/rachna_residency.webp" 
                   alt="Residential elevator project" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-lg">Harmony Residency</h3>
-                <p className="text-sm text-muted-foreground mb-2">Installation of 4 new passenger elevators</p>
+                <h3 className="font-semibold text-lg">Hotel Rachna Residency</h3>
+                {/* <p className="text-sm text-muted-foreground mb-2">Installation of 4 new passenger elevators</p> */}
                 <p>Installed high-efficiency, quiet elevators for this premium residential complex in Pune.</p>
               </div>
             </div>
@@ -175,24 +242,20 @@ const Clients = () => {
             <div className="rounded-lg overflow-hidden shadow-md">
               <div className="aspect-video bg-gray-200">
                 <img 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" 
+                  src="./images/shaan_resort.jpg" 
                   alt="Commercial elevator project" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-lg">Tech Park One</h3>
+                <h3 className="font-semibold text-lg">Shaan Coco Palms Resort</h3>
                 <p className="text-sm text-muted-foreground mb-2">Ongoing maintenance for 12 elevators</p>
                 <p>Providing regular maintenance services to ensure smooth operation for this busy IT complex.</p>
               </div>
             </div>
           </div>
           
-          <div className="text-center mt-10">
-            <Button asChild>
-              <Link to="/gallery">View All Projects</Link>
-            </Button>
-          </div>
+        
         </div>
       </section>
 

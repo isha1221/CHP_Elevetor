@@ -20,7 +20,6 @@ const Navbar = () => {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Clients', href: '/clients' },
-    { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' }
   ];
 
@@ -35,7 +34,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
           {navigation.map((item) => (
-            <NavLink
+            <NavLink 
               key={item.name}
               to={item.href}
               className={({ isActive }) =>
@@ -47,7 +46,7 @@ const Navbar = () => {
               {item.name}
             </NavLink>
           ))}
-          <Button>Get a Quote</Button>
+          {/* <Button>Get a Quote</Button> */}
         </nav>
 
         {/* Mobile Navigation Toggle */}

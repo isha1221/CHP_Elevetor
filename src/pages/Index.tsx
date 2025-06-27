@@ -33,34 +33,32 @@ const Index = () => {
     },
   ];
 
+
   const testimonials = [
     {
-      quote: "CPH Elevators provided exceptional service. They completed our elevator installation on time and within budget.",
-      author: "Rajesh Kumar",
-      role: "Facility Manager",
-      company: "Prime Towers",
-    },
-    {
-      quote: "We've been using CPH for maintenance of our hospital elevators for over 5 years. Their 24/7 service has been invaluable.",
-      author: "Dr. Anjali Sharma",
-      role: "Director",
-      company: "City General Hospital",
-    },
-    {
-      quote: "The modernization of our old elevator system was handled professionally. The elevators now run smoother and look much better.",
-      author: "Vikram Mehta",
-      role: "Building Manager",
-      company: "Harmony Residency",
-    },
+    quote: "The CPH team delivered efficient solutions tailored for our multi-storey project. Highly recommended.",
+    author: "Jitin Kamble",
+    company: "Kalyani Builders",
+  },
+  {
+    quote: "Our experience with CPH Elevators during the hospital expansion has been nothing short of excellent. Safe, efficient, and quick.",
+    author: "Dr. Patil",
+    company: "Shatayu Hospital",
+  },
+  {
+    quote: "Very satisfied with the installation at our hotel. The new elevator has elevated our guest experience, literally!",
+    author: "Dinesh Suntale",
+    company: "Hotel Aryan",
+  },
   ];
 
   const clients = [
-    "Prestige Group",
-    "City General Hospital",
-    "Tech Park One",
+    "Solapur Municipal Corporation",
+    "Kailash Complex",
+    "Usha Kiran Hospital",
     "Grand Hotel",
-    "Harmony Residency",
-    "Westside Mall",
+    "Sai Properties",
+    "Hotel Rachna Residency",
   ];
 
   return (
@@ -79,7 +77,7 @@ const Index = () => {
               <Button size="lg" asChild>
                 <Link to="/contact">Get in Touch</Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="secondary" size="lg" asChild>
                 <Link to="/services">Our Services</Link>
               </Button>
             </div>
@@ -138,7 +136,7 @@ const Index = () => {
                 </li>
                 <li className="flex items-center">
                   <span className="text-elevator-blue mr-2">✓</span>
-                  Coverage in Pune, Aurangabad, Solapur, Nasik, and more
+                  Coverage in Pune, Chhatrapati Sambhajinagar, Solapur, Nasik, and more
                 </li>
               </ul>
               <Button asChild>
@@ -148,7 +146,7 @@ const Index = () => {
             <div className="order-1 md:order-2">
               <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1582457601528-849f8042eae2?auto=format&fit=crop&q=80" 
+                  src="./images/modern_elevator2.png" 
                   alt="Modern elevator" 
                   className="w-full h-full object-cover"
                 />
@@ -171,7 +169,7 @@ const Index = () => {
                 key={index}
                 quote={testimonial.quote}
                 author={testimonial.author}
-                role={testimonial.role}
+                // role={testimonial.role}
                 company={testimonial.company}
               />
             ))}

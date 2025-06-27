@@ -30,7 +30,7 @@ const About = () => {
     }
   ];
 
-  const locations = ["Pune", "Aurangabad", "Solapur", "Nasik", "Mumbai", "Kolhapur"];
+  const locations =["Pune", "Chhatrapati Sambhajinagar", "Solapur", "Nasik", "Mumbai", "Kolhapur", "Nanded", "Latur", "Ahmednagar","Panaji","Margao","Mapusa","Bangalore","Mysore"," Mangalore","Hubli-Dharwad","Belgaum"];
 
   return (
     <>
@@ -65,7 +65,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1572204097183-e1ab140342ed?auto=format&fit=crop&q=80" 
+                  src="./images/logo.png" 
                   alt="CPH Elevators Team" 
                   className="w-full h-full object-cover"
                 />
@@ -130,7 +130,7 @@ const About = () => {
             <div>
               <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1613218222876-54273beba046?auto=format&fit=crop&q=80" 
+                  src="./images/modern_elevator.png" 
                   alt="Modern elevator interior" 
                   className="w-full h-full object-cover"
                 />
@@ -191,7 +191,7 @@ const About = () => {
             <Button size="lg" variant="secondary" asChild>
               <Link to="/contact">Contact Us</Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="secondary" asChild>
               <Link to="/services">Explore Our Services</Link>
             </Button>
           </div>

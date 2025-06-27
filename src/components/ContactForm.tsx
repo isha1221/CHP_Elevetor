@@ -23,27 +23,41 @@ const ContactForm = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
     
-    // Mock form submission - in a real app, you'd send the data to a server here
-    setTimeout(() => {
-      toast({
-        title: "Success!",
-        description: "Your message has been sent. We'll get back to you soon.",
-      });
+  //   // Mock form submission - in a real app, you'd send the data to a server here
+  //   setTimeout(() => {
+  //     toast({
+  //       title: "Success!",
+  //       description: "Your message has been sent. We'll get back to you soon.",
+  //     });
       
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-      });
+  //     setFormData({
+  //       name: '',
+  //       email: '',
+  //       phone: '',
+  //       message: ''
+  //     });
       
-      setIsSubmitting(false);
-    }, 1000);
-  };
+  //     setIsSubmitting(false);
+  //   }, 1000);
+  // };
+  const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const { name, email, phone, message } = formData;
+
+  const subject = encodeURIComponent("Enquiry regarding the CHP elevators."); 
+  const body = encodeURIComponent(
+    `${message}\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`
+  );
+
+  const mailtoLink = `mailto:cphelevators7@gmail.com?subject=${subject}&body=${body}`;
+
+  window.location.href = mailtoLink;
+};
 
   return (
     <Card className="w-full max-w-xl">

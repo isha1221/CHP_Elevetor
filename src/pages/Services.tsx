@@ -74,7 +74,7 @@ const Services = () => {
             <div>
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1557660558-d7f6676e1d97?auto=format&fit=crop&q=80" 
+                  src="./images/elevator_installation.png" 
                   alt="Elevator installation" 
                   className="w-full h-full object-cover"
                 />
@@ -91,7 +91,7 @@ const Services = () => {
             <div className="order-2 md:order-1">
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092325335-5a966b5e74b6?auto=format&fit=crop&q=80" 
+                  src="./images/elevator_service.png" 
                   alt="Elevator maintenance" 
                   className="w-full h-full object-cover"
                 />
@@ -186,7 +186,7 @@ const Services = () => {
             <div>
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1567378407519-0460da51d44c?auto=format&fit=crop&q=80" 
+                  src="./images/modern_elevator_interior.png" 
                   alt="Modern elevator interior" 
                   className="w-full h-full object-cover"
                 />
@@ -203,7 +203,7 @@ const Services = () => {
             <div className="order-2 md:order-1">
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1517940310602-26535839fe84?auto=format&fit=crop&q=80" 
+                  src="./images/elev_service.png" 
                   alt="Elevator repair" 
                   className="w-full h-full object-cover"
                 />

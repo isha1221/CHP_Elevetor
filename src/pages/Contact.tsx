@@ -6,21 +6,21 @@ const Contact = () => {
   const offices = [
     {
       city: "Pune",
-      address: "123 Main Street, Pune 411001",
-      phone: "+91 98765 43210",
-      email: "pune@cphelevators.com",
-      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.14199614953!2d73.7329866781642!3d18.524564859944604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620151925514!5m2!1sen!2sin",
+      address: "Sr.No.39, “Florida County”, Bldg. No. B6 / Flat No. 303, Near Shree Hospital, Keshav Nagar, Mundhwa, Pune - 411036.",
+      phone: "+91 9922904709",
+      email: "cphelevators7@gmail.com",
+      mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30261.400635984548!2d73.91255228413503!3d18.543579571317583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c229151423ad%3A0x5f948980691cf925!2sFlorida%20County!5e0!3m2!1sen!2sin!4v1750763463632!5m2!1sen!2sin"
     },
     {
-      city: "Aurangabad",
-      address: "456 Central Avenue, Aurangabad 431001",
-      phone: "+91 98765 43211",
-      email: "aurangabad@cphelevators.com",
-      mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119982.45580050861!2d75.2190206244445!3d19.876761867798892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba295023acbad%3A0xad5ceb0a5f38ff12!2sAurangabad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620151986047!5m2!1sen!2sin",
+      city: "Chhatrapati Sambhajinagar",
+      address: "C-60, MIDC, Walluj, Chhatrapati Sambhajinagar - 431001.",
+      phone: "+91 7776035365",
+      email: "cphconsultancy@gmail.com",
+      mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.8245568944835!2d75.20849397727211!3d19.847374979685494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9bb2085eaa61%3A0x98d7e29aaf24f38b!2sMIDC%20Waluj%2C%20Chhatrapati%20Sambhajinagar!5e0!3m2!1sen!2sin!4v1750763176494!5m2!1sen!2sin"
     },
   ];
 
-  const serviceAreas = ["Pune", "Aurangabad", "Solapur", "Nasik", "Mumbai", "Kolhapur", "Nanded", "Latur", "Ahmednagar"];
+  const serviceAreas = ["Pune", "Chhatrapati Sambhajinagar", "Solapur", "Nasik", "Mumbai", "Kolhapur", "Nanded", "Latur", "Ahmednagar","Panaji","Margao","Mapusa","Bangalore","Mysore"," Mangalore","Hubli-Dharwad","Belgaum"];
 
   return (
     <>
@@ -49,22 +49,22 @@ const Contact = () => {
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-4">Pune Office</h3>
                   <address className="not-italic space-y-2 text-muted-foreground">
-                    <p>123 Main Street, Pune 411001</p>
-                    <p>Phone: +91 98765 43210</p>
-                    <p>Email: pune@cphelevators.com</p>
+                    <p>Sr.No.39, “Florida County”, Bldg. No. B6 / Flat No. 303, Near Shree Hospital, Keshav Nagar, Mundhwa, Pune - 411036.</p>
+                    <p>Phone: +91 7776072929</p>
+                    <p>Email: cphelevators7@gmail.com</p>
                   </address>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-4">Aurangabad Office</h3>
+                  <h3 className="text-xl font-semibold mb-4">Chhatrapati Sambhajinagar Office</h3>
                   <address className="not-italic space-y-2 text-muted-foreground">
-                    <p>456 Central Avenue, Aurangabad 431001</p>
-                    <p>Phone: +91 98765 43211</p>
-                    <p>Email: aurangabad@cphelevators.com</p>
+                    <p>C-60, MIDC, Walluj, Chhatrapati Sambhajinagar - 431001.</p>
+                    <p>Phone: +91 9975066316</p>
+                    <p>Email: cphconsultancy@gmail.com</p>
                   </address>
                 </div>
               </div>
-              
+            
               <div>
                 <h3 className="text-xl font-semibold mb-4">Our Service Areas</h3>
                 <div className="flex flex-wrap gap-2">
@@ -95,7 +95,7 @@ const Contact = () => {
               </p>
             </div>
             <Button size="lg" className="bg-elevator-orange hover:bg-elevator-orange/90 whitespace-nowrap">
-              <a href="tel:+919876543210">+91 9876 543 210</a>
+              <a href="tel:+919876543210">+91 9922904709</a>
             </Button>
           </div>
         </div>
@@ -178,10 +178,10 @@ const Contact = () => {
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <Button size="lg" variant="secondary">
-              <a href="tel:+919876543210">Call Us Now</a>
+              <a href="tel:+919922904709">Call Us Now</a>
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
-              <a href="mailto:info@cphelevators.com">Email Us</a>
+            <Button size="lg" variant="secondary" >
+              <a href="mailto:cphelevators7@gmail.com">Email Us</a>
             </Button>
           </div>
         </div>
